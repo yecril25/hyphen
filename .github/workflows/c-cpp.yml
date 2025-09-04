@@ -19,5 +19,11 @@ jobs:
       run: make
     - name: make check
       run: make check
+    - name: Save Test Results!
+      if: always
+      uses: actions/upload-artifact@v4.6.2
+      with:
+        name: result
+        path: tests/test.log
     - name: make distcheck
       run: make distcheck
