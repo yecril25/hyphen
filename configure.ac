@@ -1,4 +1,4 @@
-AC_INIT([hyphen])
+AC_INIT([hyphen],[2.8.8])
 AM_INIT_AUTOMAKE([hyphen])
 AC_PROG_CC
 AC_PROG_INSTALL
