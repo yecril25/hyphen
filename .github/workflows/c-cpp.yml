@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: configure
-      run: automake --add-missing && sh configure
+      run: aclocal && automake --add-missing && sh configure
     - name: make
       run: make
     - name: make check
