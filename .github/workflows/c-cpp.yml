@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: configure
-      run: autoupdate && autoreconf && sh configure
+      run: autoreconf --add-missing && sh configure
     - name: make
       run: make
     - name: make check
